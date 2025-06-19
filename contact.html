@@ -1,14 +1,20 @@
 <link
     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 <nav class="sticky top-0 z-50">
     <div
         class="p-5 bg-green-100 flex items-center justify-between shadow-2xl">
         <h1 class="flex text-2xl">GREENDEN</h1>
+        <p class="md:hidden gap-5" id="threebar"><i
+                class="fa-solid fa-bars"></i></p>
 
-        <ul class="flex gap-5">
+        <ul class="flex gap-5 hidden md:flex">
             <li><a class="hover:underline "
-                    href="./index.html">Home</a></li>
+                    href="./home.html">Home</a></li>
             <li><a class="hover:underline "
                     href="./product.html">Product</a></li>
             <li><a class="hover:underline "
@@ -16,6 +22,20 @@
         </ul>
     </div>
 </nav>
+<section id="sidenavbar"
+        class="bg-green-100 gap-10 fixed items-center top-0 trasition-all duration-1000 z-50 p-10"
+        style="width: 30%;height:50vh; right:-35%;  ;">
+        <p id="close-sidebar" class=" text-right cursor-pointer"><i class="fa-regular fa-circle-xmark"></i></p>
+        <ul class="flex flex-col text-gray-600 gap-10 items-center">
+            <li><a class="hover:underline "
+                    href="./home.html">Home</a></li>
+            <li><a class="hover:underline "
+                    href="./product.html">Product</a></li>
+            <li><a class="hover:underline "
+                    href="./contact.html">Contact</a></li>
+        </ul>
+
+    </section>
 <section class="bg-white dark:bg-gray-900">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2
@@ -61,9 +81,9 @@
 
 <section class="flex flex-col p-4 bg-green-100">
     <h1 class="text-4xl font-bold mt-5">GREENDEN</h1>
-    <p class="my-5">Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Perspiciatis impedit voluptate minus harum vitae deleniti, quo
-        nisi modi maxime tempore!
+    <p class="my-5">Greenden – Bringing nature closer with sustainable artificial plantation.
     </p>
     <p>&copy;Rights Reserved </p>
 </section>
+<script src="contact.js"></script>
+</body>

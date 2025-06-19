@@ -1,14 +1,20 @@
 <link
     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     rel="stylesheet">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <nav class="sticky top-0 z-50">
     <div
         class="p-5 bg-green-100 flex items-center justify-between shadow-2xl">
         <h1 class="flex text-2xl">GREENDEN</h1>
+        <p class="md:hidden gap-5" id="threebar"><i
+                class="fa-solid fa-bars"></i></p>
 
-        <ul class="flex gap-5">
+        <ul class="flex gap-5 hidden md:flex">
             <li><a class="hover:underline "
-                    href="./index.html">Home</a></li>
+                    href="./home.html">Home</a></li>
             <li><a class="hover:underline "
                     href="./product.html">Product</a></li>
             <li><a class="hover:underline "
@@ -16,77 +22,90 @@
         </ul>
     </div>
 </nav>
+<section id="sidenavbar"
+    class="bg-green-100 gap-10 fixed items-center top-0 trasition-all duration-1000 z-50 p-10"
+    style="width: 30%;height:50vh; right:-35%;  ;">
+    <p id="close-sidebar" class=" text-right cursor-pointer"><i class="fa-regular fa-circle-xmark"></i></p>
+    <ul class="flex flex-col text-gray-600 gap-10 items-center">
+        <li><a class="hover:underline "
+                href="./home.html">Home</a></li>
+        <li><a class="hover:underline "
+                href="./product.html">Product</a></li>
+        <li><a class="hover:underline "
+                href="./contact.html">Contact</a></li>
+    </ul>
+
+</section>
 <section class="text-center p-5">
-    <h1 class="font-bold text-2xl  mt-3 mb-3">Join Our News Letter</h1>
+    <h1 class="font-bold text-2xl  mt-3 mb-3">Search a product</h1>
     <input type="text" class="border border-black p-2 mb-3"
         placeholder="Search for a Product for planting...!!!"
-        style="width: 50%;">
+        style="width: 50%;" id="product-search-bar">
 </section>
 <div>
-    <div class="grid grid-cols-2 inline md:grid-cols-4">
-        <div class="grid text-center justify-center p-5">
+    <div class="grid grid-cols-2 inline md:grid-cols-4" id="product-search">
+        <div class="text-center p-5">
             <img
-                class="items-center hover:shadow-2xl transform hover:-translate-y-2"
-                src="./b-2.jpg" alt="1">
-            <h1>Rose Port</h1>
+                class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                src="./1.png" alt="1">
+            <h1>Blush Bloom Delight</h1>
             <p>$ 20</p>
         </div>
         <div class="grid text-center justify-center p-5">
             <img
-                class="items-center hover:shadow-2xl transform hover:-translate-y-2"
-                src="./b-2.jpg" alt="1">
-            <h1>Lilly Port</h1>
+                class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                src="./2.png" alt="1">
+            <h1>Lavender Serenity Pot</h1>
             <p>$ 20</p>
         </div>
         <div class="grid text-center justify-center p-5">
             <img
-                class="items-center hover:shadow-2xl transform hover:-translate-y-2"
-                src="./b-2.jpg" alt="1">
-            <h1>Spider Port</h1>
+                class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                src="./3.png" alt="1">
+            <h1>Sunset Petal Charm</h1>
             <p>$ 20</p>
         </div>
         <div class="grid text-center justify-center p-5">
             <img
-                class="items-center hover:shadow-2xl transform hover:-translate-y-2"
-                src="./b-2.jpg" alt="1">
+                class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                src="./4.png" alt="1">
             <h1>Lotusee Port</h1>
             <p>$ 20</p>
         </div>
         <div class="grid text-center justify-center p-5">
             <img
-                class="items-center hover:shadow-2xl transform hover:-translate-y-2"
-                src="./b-2.jpg" alt="1">
+                class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                src="./4.png" alt="1">
             <h1>Rose Port</h1>
             <p>$ 20</p>
         </div>
         <div class="grid text-center justify-center p-5">
             <img
-                class="items-center hover:shadow-2xl transform hover:-translate-y-2"
-                src="./b-2.jpg" alt="1">
+                class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                src="./5.png" alt="1">
             <h1>Lilly Port</h1>
             <p>$ 20</p>
         </div>
         <div class="grid text-center justify-center p-5">
             <img
-                class="items-center hover:shadow-2xl transform hover:-translate-y-2"
-                src="./b-2.jpg" alt="1">
+                class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                src="./1.png" alt="1">
             <h1>Spider Port</h1>
             <p>$ 20</p>
         </div>
         <div class="grid text-center justify-center p-5">
             <img
-                class="items-center hover:shadow-2xl transform hover:-translate-y-2"
-                src="./b-2.jpg" alt="1">
-            <h1>Lotusee Port</h1>
+                class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                src="./3.png" alt="1">
+            <h1>Rose Harmony Planter</h1>
             <p>$ 20</p>
         </div>
     </div>
     <section class="flex flex-col p-4 bg-green-100">
         <h1 class="text-4xl font-bold mt-5">GREENDEN</h1>
-        <p class="my-5">Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Perspiciatis impedit voluptate minus harum vitae deleniti, quo
-            nisi modi maxime tempore!
+        <p class="my-5">Greenden – Bringing nature closer with sustainable artificial plantation.
         </p>
         <p>&copy;Rights Reserved </p>
     </section>
 </div>
+<script src="product.js"></script>
